@@ -1,3 +1,5 @@
+import java.nio.file.FileSystemNotFoundException;
+
 public class Main {
     public static void main(String[] args) {
         ///Problem1
@@ -48,10 +50,22 @@ public class Main {
 
         int deliveryDistance = 95;
         int deliveryTime = 1;
+        if (deliveryDistance>20) {
+            deliveryTime++;
+        }
+        if(deliveryDistance>60){
+            deliveryTime++;
+
+
+        }
+        System.out.println("Delivery time will be"  +deliveryTime+ "days ");
+
+
 
         ///Problem 5
         System.out.println("Problem5");
         int monthNumber = 11;
+        
 
 
 
